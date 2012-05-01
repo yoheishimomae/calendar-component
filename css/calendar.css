@@ -1,0 +1,116 @@
+#calendar tr, #calendar td, #calendar th {
+    margin: 0;
+    padding: 0;
+}
+
+#calendar {
+    -webkit-box-shadow: 0px 2px 10px 0px #aaa;
+    -moz-box-shadow: 0px 2px 10px 0px #aaa;
+    box-shadow: 0px 2px 10px 0px #aaa;
+}
+
+#calendar table {
+    width: 100%;
+    background: ;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.cal-spinner {
+    
+}
+
+.cal-header a {
+    -webkit-transition: background-color 0.2s linear;
+    -moz-transition: background-color 0.2s linear;
+    -o-transition: background-color 0.2s linear
+}
+
+#calendar table a, #calendar table .empty, #calendar table th span, .cal-header {
+    color: #444;
+    text-decoration: none;
+    display: block;
+    border: 1px solid #c0c0c0;
+    border-left: 1px solid #fff;
+    border-top: 1px solid #fff;
+    background: #eee;
+    height: 50px;
+    line-height: 50px;
+    text-shadow: 0 1px 0px #fff;
+    background: url(images/calendar_sprite.png) repeat-x 0 0;
+}
+
+.cal-header a {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: block;
+    background: #777 url(images/calendar_sprite.png) no-repeat -10px -211px;
+    float: left;
+}
+
+#calendar table a {
+    position: relative;
+}
+
+#calendar table .today a {
+    color: #2c8fce;
+    font-weight: bold;
+}
+
+#calendar table a .event-day {
+    position: absolute;
+    width: 4px;
+    display: block;
+    bottom: 10px;
+    line-height: 0;
+    left: 50%;
+    margin-left: -4px;
+}
+
+#calendar table a.selected {
+    background-position: 0 -60px;
+}
+
+.cal-header a.right {
+    float: right;
+    background-position: -10px -261px;
+}
+.cal-header a:hover {
+    background-color: #aaa;
+}
+
+.cal-header {
+    text-align: center;
+    padding: 8px;
+    height: 28px;
+    line-height: 28px;
+}
+
+#calendar table th span {
+    height: 24px;
+    line-height: 24px;
+    font-size: 9px;
+    font-weight: normal;
+    border-left: none;
+    border-right: none;
+    background-position: 0 -120px;
+}
+#calendar table th span.first {
+    border-left: 1px solid #fff;
+}
+#calendar table th span.last {
+    border-right: 1px solid #c0c0c0;
+}
+
+#upcoming-events li a {
+    color: #666;
+    background: none;
+    padding: 16px;
+    display: block;
+}
+
+#upcoming-events li a:hover {
+    background: #eee;
+    text-decoration: none;
+}
