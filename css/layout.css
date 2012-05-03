@@ -1,0 +1,52 @@
+.wrap {
+    max-width: 1000px;
+    margin: 0 auto
+}
+
+.left-group {
+    float:left;
+    width:400px;
+    padding: 0;
+}
+
+.left-group .section {
+    margin-bottom: 32px;
+}
+
+.content-holder {
+    margin-left: 450px;
+    width: auto;
+    min-height: 700px
+}
+
+@media all and (max-width:1000px) {
+    .left-group {
+        float:left;
+        width:300px;
+        padding: 0;
+    }
+
+    .left-group .section {
+        margin-bottom: 32px;
+    }
+
+    .content-holder {
+        margin-left: 330px;
+        width: auto;
+        min-height: 700px
+    }
+}
+
+@media all and (max-width:710px) {
+    .left-group {
+            float: none;
+            width: auto;
+    }
+    .left-group .section {
+        width: auto;
+        float: none;
+    }
+    .content-holder {
+        margin-left: 0;
+    }
+}
